@@ -1,40 +1,52 @@
 *{
-margin:0;
+margin: 0;
 padding: 0;
 box-sizing: border-box;
-line-height: 1.5em;
+line-height: 1.8em;
 }
+
 html{
-    font-size: 16px;
-    font-family: Arial, times;
+    font-size: 14px;
+    font-family: verdana, Geneva, sans-serif;
 }
-.container {
+
+main{
     width: 960px;
     width: 90vw;
-    margin: 0 auto;
+    margin: 0px auto;
 }
-/*Fixed gives the designer complete control*/
-/*article, aside{*/
 
 header{
-    height: 250px;
-    background-color:lightblue;
+    height: 450px;
+    background-color: lightblue;
     background-image: url(../images/woman-breathing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top center;
+    background-position: top center;
+    padding-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+header p{
+    width:500px;
+    margin-left: 480px;
+    margin-top: 0px;
+}
+
 h1{
-    font-size: 3rem;
-    color: white;
+    font-size: 2rem;
+    color:rgb(60, 60, 60);
+    font-family:'Lobster', cursive;
+    margin-top: 25px;
 }
 
 nav {
     height: 45px;
     background-color: darksalmon;
 }
-/*remember that "."" is for class elements and nav is a selector so it does not need 
-*/
+/*remember that "."" is for class elements and nav is a selector so it does not need "."*/
+
 nav{
     background: #034f84;
     font-family: verdana, Geneva, sans-serif;
@@ -56,7 +68,7 @@ nav a:link{
     display: block;
     color: #f7786b;
     text-decoration: none;
-    padding:15px 17px;
+    padding:7px 17px 8px 17px;
 }
 
 nav a:visited{
@@ -69,89 +81,127 @@ nav a:hover{
 }
 
 main{
-    width: 75vw;
+    width: 100vw;
     margin: 0 auto;
     position: relative;
 }
 
 main{
-    display: flex;
     font-size: 1em;
 }
+
 h2 {
     font-size: 1.8rem;
+    color:rgb(60, 60, 60);
+    font-family:'Lobster', cursive;
+    margin-top: 10px;
 }
-
-section {
-    height: 400px;
+.section-1 {
+    height: 500px;
     background-color: lightsteelblue;
-    flex: 2;
-    /*Turning section into flex parent*/
     display: flex;
-    
-    }
-    
-article, aside{
-    padding-left: 1rem;
+    width: 100%;
 }
-
+    
 article {
     overflow: auto;
+    padding-left: 1rem;
+    padding-right: 3rem;
 }
     
 .art-1{
     background-color: #33cccc;
-    flex: 1;
-    
 }
+
 .art-2{
     background-color: #f7786b;
-    flex: 1;
 }
 .art-3{
     background-color: #cc66ff;
-    flex: 1;
-}
-aside{
-    height: 400px;
-    background-color: lightgray;
-    flex: 1;
-}
-.box{
-    display: flex;
-}
-    
-footer{
-    height: 60px;
-    background-color: #034f84;
-    display: flex;
 }
 
+.section-2 {
+    height: 400px;
+    background-color: lightsteelblue;
+    display: flex;
+    width:100%;
+    }
+    
+.section-2 p{
+   margin-left: 30px;
+   margin-right: 50px;
+}    
+#AboutAna{
+    margin-left: 30px;
+}
+h3 {font-family:'Lobster', cursive;
+     margin-top: 30px;
+     color:rgb(60, 60, 60);
+}
+/*Find out if you need to place the whole body unde media queries to make it work properly on different devices*/
 /* Media Queries*/
     @media only screen and (max-width: 600px){
         html{
             font-size: 12px;
         }
         header{
-            background: url(../images/woman-breathing.jpg);
+            /*background: url(../images/woman-breathing.jpg);*/
             background-position: center center;
         }
         .container{
             width: 100vw;
         }
-        main{
-            flex-direction:column-reverse;
-        }
-        section{
-            flex-direction: column;
-        }
-        .art-1{
-            order:2;
-        }
-        .art-3{
-            order:3;
-        }
-        .art-3{
-            order:1;
-        }
+        
+       section-1{
+        flex-direction: column;
+       }
+       section-2{
+        flex-direction: column;  
+       }
+    img {
+    max-width: 100%;
+    height: auto;
     }
+    .aboutAna{width:500px;
+    margin-left: 70px;
+    margin-top: 0px;
+        
+    } 
+
+    }  
+/*had to use flex-direction: row-reverse to get form and picture on the same box*/
+.bottom {
+    background-color: lightgray;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+    width:100%;
+}
+form{
+    margin-left: 50px;
+}
+
+footer{
+    position:fixed;
+    bottom: 0px;
+    height: 70px;
+    width:100%;
+    background-color: #034f84;
+    font-size: 12px;
+    color: white;
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+ /*this will not work because the images are not block elements they are part of an article*/  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} 
+/*this styles the services.html page since it did not inherit from regular styling ask Cira why?*/
+.services{
+    padding:10px 70px 10px 50px;
+}

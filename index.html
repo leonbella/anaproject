@@ -4,83 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>Movement Analysis</title>
 </head>
+
 <body>
     <nav id="top">
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#AboutAna">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#Get">Contact</a></li>
             
+ <!--#AboutAna and #Get links to same page-->          
         </ul>
     </nav>
  
     <header>
-        <h2>Movement Never Lies</h2>
+        <h1>Movement Never Lies</h1>
+        <p> Although body movement is the common denominator of all human endeavor, it is ephemeral. It appears for an instant and then disappears, leaving only a trace in the mind of the observer. You can, however, learn to understand your movement and its inner and outer manifestations using the Laban Movement Analysis. Movement can be divided into four components: Body, Effort, Space and Shape in order to observe, analyze and re-pattern movement scientifically and efficiently. AB Coaching can help you better understand how and why you move to help you reach your fullest potential whether in business, fitness or for health.
+       </p>
     </header>
-    <div class="container">
     <main>
-        <section>
+    <div class="container">
+    
+        <section class="section-1">
+            
             <article class="art-1">
                 <h3>Embodied Leadership</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
-                    
+                <br><br>
+                 <img src="images/womanMenleader.jpg" width="260" height="145"  alt="WomanLeader" class="center"/>
+                <br><br>
+                <p>Promote and develop empowered business skills such as enhancing communications, engaging presentation skills and executive managerial talent. Specializing in multi-cultural and international business negotiations and marketing practices.
                 </p>
+                
             </article>
+            
             <article class="art-2">
                 <h3>Health & Fitness</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
+                <br><br>
+                 <img src="images/3FitWomen.jpeg" alt="3 Fit Women Sitting" class="center" width="260" height="145"/>
+                 <br><br>
+                <p>Create, develop and teach exercise programs. Develop health and wellness lecture demonstrations focused on the somatic principles. Somatic movement is about awakening the awareness of the human body in motion. Empowering healing, well-being and harmonious movement.
                 </p>
             </article>
+            
             <article class="art-3">
                 <h3>Dance Education</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
-                    
+                <br><br>
+                <img src="images/woman-backbend.jpg" alt="dancer in backbend" class="center" width="260" height="145"/>
+                <br><br>
+                <p>Instruction in dance and movement specializing in Laban Movement Analysis (LMA), Bartenieff Fundamentals (BF), and Motif Notation. LMA, BF, and Motif Notation are based on the work of dance pioneer Rudolf Laban and his Protégé Irmgard Bartenieff. 
                 </p>
             </article>
+            
         </section>
-        <aside> 
-        <h3>About Ana</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, cum, esse sapiente suscipit praesentium iste.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum quo voluptatibus adipisci architecto nisi. 
-                    </p>
-        </aside>
-       
-      <section class="bottom">
-        <h2> Get in Touch</h2>
-        <br> <br>
-        <section class="box">
-            <div>
-                <img src="childspose.jpg"/>
-                
-            </div>
-        <form>
-            First Name <input type="text" name="firstname">
-            <br> <br>
-            Last Name <input type="text" name="name">
-            <br> <br>
-            Email <input type="text" Email="email">
-            <br> <br>
-             Subject <input type="text" name="subject">
-            <br> <br>
-            Message <input type="text" name="message">
-            <br><br>
-            <input type="submit" submit="submit"
-        </form>
-        
-    </section>
-    
-    </main>
     </div>
+    
+        <section class="section-2"> 
+        <div>
+       <img src="images/brooklyn-bridgeZoom.jpg" width="560" height="400" class="brooklynbridge"/>
+<!--brooklynbridge image is not scaling properly-->
+       </div>
+        <div class="aboutAna">
+        <h2 id="AboutAna">About Ana</h2>
+        <br>
+        <p>Ana is an independent consultant in movement empowerment, based in New York City. She is a Laban Certified Movement Analyst (CMA), a Registered Somatic Movement Therapist/Educator (RSMT/E) and Certified Fitness Expert and Moving For Life Certified Instructor (MFLCI). She holds a Masters Degree in Dance Education from New York University and a Bachelor of Arts from Cornell University.</p> 
+        
+        <p>Ana would love to work with you in one of three diverse but related areas: Embodied Leadership, Dance and Movement Education or in Health and Fitness.</p>
+        </div>
+        </section>
+        
+     <section class="bottom">
+ <!--how do I increase the size of the input boxes?-->
+ <!--consider reversing the form to the right and picture to the left in section class bottom-->
+        <form>
+            <h2 id="Get">Get in Touch</h2>
+            
+            First Name <input type="text" name="firstname">
+            <br><br>
+            Last Name <input type="text" name="name">
+            <br><br>
+            Email <input type="text" Email="email">
+            <br><br>
+             Subject <input type="text" name="subject">
+            <br><br>
+            Message <input type="text" name="message">
+            <br>
+            <input type="submit" submit="submit">
+            
+        </form>
+       <div>
+        <img class="network" src="images/network.jpg" width="560" height="345"/>
+         </div> 
+  <!--add code to return to the top of the page-->       
+    </section>
+    </main>
+   
  <footer>
-        <p>Copyright AB Consulting 2018</p>
+        <p>&copy AB Consulting 2018</p>
+        <p> All Rights Reserved</p>
     </footer>   
     
 </body>
